@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html data-ng-app="base">
 	<head>
 		<title>Base</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<link rel="stylesheet" href="resources/libs/pure/pure-min.css"/>
+		<!--[if lte IE 8]>
+        <link rel="stylesheet" href="resources/libs/pure/grids-responsive-old-ie-min.css">
+        <![endif]-->
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="resources/libs/pure/grids-responsive-min.css">
+		<!--<![endif]-->
+		<!-- Dependencies -->
+		<script src="resources/libs/es5-shim/es5-shim.min.js"></script>
+		<script src="resources/libs/angular/angular.min.js"></script>
+		<script src="resources/libs/angular-resource/angular-resource.min.js"></script>
 	</head>
 	<body>
-		<div>Base</div>
+		<div id="layout" class="pure-g">
+
+			<h1>BASE</h1>
+		</div>
+		<script src="resources/app/domain1/Domain1Service.js"></script>
 	</body>
 </html>
