@@ -233,6 +233,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<addResources>false</addResources>
+					<classifier>boot</classifier>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -315,7 +316,7 @@
 				</dependency>
 			</dependencies>
 			<build>
-				<finalName>base-boot</finalName>
+				<finalName>base</finalName>
 				<plugins>
 					<!-- https://maven.apache.org/plugins/maven-antrun-plugin/ -->
 					<plugin>
