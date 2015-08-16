@@ -228,14 +228,14 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
+			<!--			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<addResources>false</addResources>
 					<classifier>boot</classifier>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		</plugins>
 		
 		<resources>
@@ -257,7 +257,7 @@
 
 			<properties>
 				<base.database.driver.classname>org.h2.Driver</base.database.driver.classname>
-				<base.database.url>jdbc:h2:mem:testdb;DB_CLOSE_DELAY=30;DB_CLOSE_ON_EXIT=false</base.database.url>
+				<base.database.url>jdbc:h2:mem:base;DB_CLOSE_DELAY=30;DB_CLOSE_ON_EXIT=false</base.database.url>
 				<base.database.username>sa</base.database.username>
 				<base.database.password></base.database.password>
 			</properties>
@@ -290,8 +290,19 @@
 
 		<profile>
 			<id>deployable</id>
+			<properties>
+				<base.database.driver.classname>org.h2.Driver</base.database.driver.classname>
+				<base.database.url>jdbc:h2:mem:base;DB_CLOSE_DELAY=30;DB_CLOSE_ON_EXIT=false</base.database.url>
+				<base.database.username>sa</base.database.username>
+				<base.database.password></base.database.password>
+			</properties>
 
 			<dependencies>
+				<dependency>
+					<groupId>com.h2database</groupId>
+					<artifactId>h2</artifactId>
+					<scope>runtime</scope>
+				</dependency>
 				<dependency>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -307,8 +318,20 @@
 			<!-- By default that is to put the resulting archive into the 'webapps' folder. -->
 			<!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
 			<id>openshift</id>
+			
+			<properties>
+				<base.database.driver.classname>org.h2.Driver</base.database.driver.classname>
+				<base.database.url>jdbc:h2:mem:base;DB_CLOSE_DELAY=30;DB_CLOSE_ON_EXIT=false</base.database.url>
+				<base.database.username>sa</base.database.username>
+				<base.database.password></base.database.password>
+			</properties>
 
 			<dependencies>
+				<dependency>
+					<groupId>com.h2database</groupId>
+					<artifactId>h2</artifactId>
+					<scope>runtime</scope>
+				</dependency>
 				<dependency>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>

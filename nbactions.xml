@@ -10,7 +10,7 @@
                 <goal>install</goal>
             </goals>
             <activatedProfiles>
-                <activatedProfile>dev</activatedProfile>
+                <activatedProfile>deployable</activatedProfile>
             </activatedProfiles>
         </action>
         <action>
@@ -19,10 +19,15 @@
                 <packaging>jar</packaging>
             </packagings>
             <goals>
-                <goal>spring-boot:run</goal>
+                <goal>clean</goal>
+                <goal>package</goal>
+                
             </goals>
+            <properties>
+                <netbeans.deploy>true</netbeans.deploy>
+            </properties>
             <activatedProfiles>
-                <activatedProfile>dev</activatedProfile>
+                <activatedProfile>deployable</activatedProfile>
             </activatedProfiles>
         </action>
     </actions>

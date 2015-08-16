@@ -31,11 +31,12 @@ install:
   - mvn clean install
     -DskipTests=true
     -Dmaven.javadoc.skip=true
-    -Dbase.database.driver.classname=com.mysql.jdbc.Driver
-    -Dbase.database.url=$DB_URL
-    -Dbase.database.username=$DB_USERNAME
-    -Dbase.database.password=$DB_PASSWORD
     -Popenshift -B -V
+   # -Dbase.database.driver.classname=com.mysql.jdbc.Driver
+   # -Dbase.database.url=$DB_URL
+   # -Dbase.database.username=$DB_USERNAME
+   # -Dbase.database.password=$DB_PASSWORD
+    
 
 after_success:
   - if [ "$TRAVIS_BRANCH" != "master" ]; then echo "No deployment because branch is not master."; exit 0; fi
