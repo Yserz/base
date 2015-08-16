@@ -404,7 +404,7 @@
 						</executions>
 					</plugin>
 					<!-- http://mojo.codehaus.org/exec-maven-plugin/ -->
-					<plugin>
+					<!--					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>exec-maven-plugin</artifactId>
 						<version>1.4.0</version>
@@ -417,11 +417,11 @@
 							</execution>
 						</executions>
 						<configuration>
-							<!-- https://github.com/blittle/bower-installer -->
+							 https://github.com/blittle/bower-installer 
 							<executable>bower-installer</executable>
 							<workingDirectory>${basedir}</workingDirectory>
 						</configuration>
-					</plugin>
+					</plugin>-->
 					<!-- https://maven.apache.org/plugins/maven-war-plugin/ -->
 					<plugin>
 						<artifactId>maven-war-plugin</artifactId>

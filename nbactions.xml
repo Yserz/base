@@ -10,15 +10,13 @@
 			<goal>install</goal>
 		</goals>
 		<activatedProfiles>
-			<activatedProfile>deployable</activatedProfile>
+			<activatedProfile>dev</activatedProfile>
 		</activatedProfiles>
 	</action>
 	<action>
 		<actionName>run.single.deploy</actionName>
 		<packagings>
 			<packaging>war</packaging>
-			
-			
 		</packagings>
 		<goals>
 			<goal>package</goal>
@@ -73,6 +71,18 @@
                 <exec.args>-classpath %classpath de.yserz.base.ApplicationContext</exec.args>
                 <exec.executable>java</exec.executable>
             </properties>
+        </action>
+	<action>
+            <actionName>CUSTOM-Create War</actionName>
+            <displayName>Create War</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>install</goal>
+                <goal>war:war</goal>
+            </goals>
+            <activatedProfiles>
+                <activatedProfile>openshift</activatedProfile>
+            </activatedProfiles>
         </action>
 	
 </actions>

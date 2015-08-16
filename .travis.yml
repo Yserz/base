@@ -28,7 +28,7 @@ before_install:
   - npm install -g bower-installer
 
 install:
-  - mvn clean install
+  - mvn clean install war:war
     -DskipTests=true
     -Dmaven.javadoc.skip=true
     -Popenshift -B -V
