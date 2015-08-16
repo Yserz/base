@@ -27,3 +27,4 @@ build.properties
 .idea/*/*
 
 ### Secrets ###
+id_rsa_openshift_travis
