@@ -315,7 +315,7 @@
 				</dependency>
 			</dependencies>
 			<build>
-				<finalName>base</finalName>
+				<finalName>base-boot</finalName>
 				<plugins>
 					<!-- https://maven.apache.org/plugins/maven-antrun-plugin/ -->
 					<plugin>
