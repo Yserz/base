@@ -1,0 +1,29 @@
+base.log
+
+### Builds ###
+target/
+out/
+deployments/**/*.*
+.dpl/
+webapps/**
+
+### Bower ###
+bower_components/
+src/main/resources/public/resources/libs/**/*
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+build.xml
+build.properties
+
+### IntelliJ ###
+# http://devnet.jetbrains.com/docs/DOC-1186
+.idea/*.xml
+!.idea/codeStyleSettings.xml
+.idea/*/*
+
+### Secrets ###
