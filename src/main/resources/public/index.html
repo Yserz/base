@@ -12,16 +12,128 @@
 		<!--[if gt IE 8]><!-->
 		<link rel="stylesheet" href="resources/libs/pure/grids-responsive-min.css">
 		<!--<![endif]-->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="resources/app/css/style-old-ie.css">
+		<![endif]-->
+		<!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="resources/app/css/style.css">
+		<!--<![endif]-->
 		<!-- Dependencies -->
 		<script src="resources/libs/es5-shim/es5-shim.min.js"></script>
 		<script src="resources/libs/angular/angular.min.js"></script>
 		<script src="resources/libs/angular-resource/angular-resource.min.js"></script>
 	</head>
 	<body>
-		<div id="layout" class="pure-g">
+		<div class="header">
+			<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+				<a class="pure-menu-heading" href="/">Base</a>
 
-			<h1>BASE</h1>
+				<ul class="pure-menu-list">
+					<li class="pure-menu-item pure-menu-selected"><a href="/" class="pure-menu-link">Home</a></li>
+				</ul>
+			</div>
 		</div>
+
+		<div class="splash-container">
+			<div class="splash">
+				<h1 class="splash-head">Michael Koppen</h1>
+				<hr />
+			</div>
+		</div>
+
+		<div class="content-wrapper">
+			<div class="footer l-box is-center"></div>
+			<div class="content">
+				<h2 class="content-head is-center">Excepteur sint occaecat cupidatat.</h2>
+
+				<div class="pure-g">
+					<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+
+						<h3 class="content-subhead">
+							<i class="fa fa-rocket"></i>
+							Get Started Quickly
+						</h3>
+						<p>
+							Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+						</p>
+					</div>
+					<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+						<h3 class="content-subhead">
+							<i class="fa fa-mobile"></i>
+							Responsive Layouts
+						</h3>
+						<p>
+							Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+						</p>
+					</div>
+					<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+						<h3 class="content-subhead">
+							<i class="fa fa-th-large"></i>
+							Modular
+						</h3>
+						<p>
+							Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+						</p>
+					</div>
+					<div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+						<h3 class="content-subhead">
+							<i class="fa fa-check-square-o"></i>
+							Plays Nice
+						</h3>
+						<p>
+							Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="ribbon l-box-lrg pure-g">
+				<div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+					<img class="pure-img-responsive" alt="File Icons" width="300" src="/img/common/file-icons.png">
+				</div>
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+					<h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
+
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor.
+					</p>
+				</div>
+			</div>
+
+			<div class="content">
+				<h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
+
+				<div class="pure-g">
+
+					<div class="l-box-lrg pure-u-1 pure-u-md-1">
+						<h4>Contact Me</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.
+						</p>
+
+						<h4>More Information</h4>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="footer l-box is-center">
+				&copy; 2015 Michael Koppen &middot; <a href="imprint.html">imprint</a>
+			</div>
+		</div>
+
 		<script src="resources/app/domain1/Domain1Service.js"></script>
 	</body>
 </html>
