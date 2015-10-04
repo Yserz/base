@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+html{
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+
 body {
-	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
