@@ -10,7 +10,7 @@ html{
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Abel', sans-serif;
 	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
@@ -39,6 +39,16 @@ a:hover {
 a:active {
     color: #444;
 }
+h1{
+	font-size: 64px;
+}
+hr{ 
+    display: block;
+    border:none;
+	height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
+}
 
 h1,
 h2,
@@ -47,7 +57,7 @@ h4,
 h5,
 h6,
 label {
-    letter-spacing: 0.5px;
+    letter-spacing: 10.8px;
 }
 
 mail::after {
@@ -82,12 +92,10 @@ img.desaturate:hover {
  */
 .content-wrapper {
     width: 100%;
-    /*background: white;*/
 }
 
 .content {
     padding: 1em;
-    /*background: white;*/
 }
 
 .footer {
@@ -101,10 +109,10 @@ img.desaturate:hover {
 
 .infobox{
 	position: absolute;
-	top: 20%;
+	top: 10%;
 	left: 10%;
 	width: 80%;
-	height: 30%;
+	height: 50%;
 	border: #b94a48;
 	border-width: 1px;
 	border-left-width: 1px;
