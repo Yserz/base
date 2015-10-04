@@ -64,6 +64,12 @@ mail::before {
 img.desaturate { 
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	opacity: 0.8;
+}
+img.desaturate:hover { 
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	opacity: 1;
 }
 
 
